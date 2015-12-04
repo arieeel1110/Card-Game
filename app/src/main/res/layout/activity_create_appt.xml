@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:hint="Course title"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="16sp"
+                android:textColor="@color/gray_bg"
+                />
+
+            <Spinner
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Spinner
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="16sp"
+                android:textColor="@color/gray_bg"
+                />
+
+            <Spinner
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Spinner
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:hint="Detail"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/creator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:hint="Creator"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:hint="Location"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:hint="Capacity"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:hint="Phone"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:hint="Email"
+            app:met_textColorHint="@color/gray_bg"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an appointment"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="#0066cc"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
