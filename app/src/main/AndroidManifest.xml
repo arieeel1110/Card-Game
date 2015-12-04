@@ -15,8 +15,7 @@
         <activity
             android:name=".ui.activity.OnBoardingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,11 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.MainPageActivity"
+            android:name=".ui.activity.UserpageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activity.ViewAppointmentActivity" />
         <activity
-            android:name=".ui.activity.CreateAppointmentActivity"
+            android:name=".ui.activity.createApptActivity"
             android:label="@string/title_activity_create_appt"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
