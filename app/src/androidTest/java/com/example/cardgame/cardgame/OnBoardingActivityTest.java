@@ -27,11 +27,15 @@ import static org.hamcrest.Matchers.not;
 @RunWith(AndroidJUnit4.class)
 public class OnBoardingActivityTest {
 
+    //Test onBoarding view page
+    //Must make sure that the user has logged out
+
     @Rule
     public ActivityTestRule<OnBoardingActivity> activityRule = new ActivityTestRule(OnBoardingActivity.class);
 
     @Test
     public void initialUITest(){
+
         onView(withId(R.id.username)).check(matches(allOf(isDisplayed(), isEnabled(), withHint("Username"))));
         onView(withId(R.id.password)).check(matches(allOf(isDisplayed(), isEnabled(), withHint("Password"))));
         onView(withId(R.id.submit)).check(matches(allOf(isEnabled(), isClickable(), isDisplayed(), withText("Log In"))));
@@ -42,21 +46,21 @@ public class OnBoardingActivityTest {
 
     @Test
     public void checkToggle() {
-        // initial state
+
+        //Given the user haven't logged in
+        //And the user does not have an account
         onView(withId(R.id.submit)).check(matches(allOf(isEnabled(), isClickable(), isDisplayed(), withText("Log In"))));
         onView(withId(R.id.description)).check(matches(allOf(isDisplayed(), isEnabled(), withText("Don't have an account? "))));
         onView(withId(R.id.action)).check(matches(allOf(isDisplayed(), isEnabled(), withText("Sign up."))));
 
-        // toggle
+        // //When the user click on ""Don't have an account? " button
         onView(withId(R.id.options)).perform(click());
 
-        // new state
+
+        //Then the "Login" button toggles and becomes the "Sign up" button
         onView(withId(R.id.submit)).check(matches(allOf(isEnabled(), isClickable(), isDisplayed(), withText("Sign Up"))));
         onView(withId(R.id.description)).check(matches(allOf(isDisplayed(), isEnabled(), withText("Already have an account? "))));
         onView(withId(R.id.action)).check(matches(allOf(isDisplayed(), isEnabled(), withText("Log in."))));
-
-        // toggle back
-        onView(withId(R.id.options)).perform(click());
     }
 
 }

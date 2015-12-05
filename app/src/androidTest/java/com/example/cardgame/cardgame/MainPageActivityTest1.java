@@ -20,15 +20,12 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static java.lang.Thread.sleep;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.not;
 
 
 @RunWith(AndroidJUnit4.class)
-
-/**
- * Created by hacker on 12/4/15.
- */
 public class MainPageActivityTest1 {
     @Rule
     public ActivityTestRule<MainPageActivity> activityRule = new ActivityTestRule(MainPageActivity.class);
@@ -44,7 +41,8 @@ public class MainPageActivityTest1 {
 
     }
 
-    //when he/she clicked the logout button, then a dialog will show up to ask user to confirm
+    //When he/she clicked the logout button
+    // Then a dialog will show up to ask user to confirm
     @Test
     public void checkLogout() {
 
@@ -52,6 +50,11 @@ public class MainPageActivityTest1 {
         onView(withId(R.id.logout)).perform(click());
 
         // new state - logout prompt
+        try {
+            sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         onView(withText("Are you sure you want to log out?")).check(matches(isDisplayed()));
 
     }

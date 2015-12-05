@@ -44,7 +44,8 @@ public class MainPageActivityTest2 {
 
     }
 
-    //when he/she clicked the plus button, then a creating appointment page will show asking for user input
+    //When he/she clicked the plus button
+    //Then a creating appointment page will show up and ask for user input
     @Test
     public void checkCreateAppointment() {
 
