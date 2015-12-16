@@ -1,16 +1,9 @@
-# [IMPORTANT]Guidelines for CSE110 group members
-
-If you encounter some thing related to Github you are unfamiliar with,please google Git101.
 
 
-###Branches
-master: production
- 
-feature branch: your development branch (E.g. login)
+# Study Buddies
+An Android app that helps students in UCSD to create or join study groups.
 
-###Flow:
-Create a branch off master. 
- 
-Once a code is stable, merge your code to master.
- 
-Remember to **sync** or **pull/push** before and after writing your code.
+
+<img src="https://github.com/arieeel1110/PokerRoom/blob/master/image/P4.png?raw=true" alt="alt text" width="347">         <img src="https://github.com/arieeel1110/PokerRoom/blob/master/image/P1.png?raw=true" alt="alt text" width="350">
+<img src="https://github.com/arieeel1110/PokerRoom/blob/master/image/P2.png?raw=true" alt="alt text" width="347">         <img src="https://github.com/arieeel1110/PokerRoom/blob/master/image/P3.png?raw=true" alt="alt text" width="350">
+
